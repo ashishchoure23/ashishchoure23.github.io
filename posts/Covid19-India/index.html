@@ -13243,24 +13243,6 @@ require(['plotly'], function(Plotly) {
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today_states</span> <span class="o">=</span> <span class="n">date_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">date_table</span><span class="o">.</span><span class="n">last_valid_index</span><span class="p">()]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">max_confrim</span> <span class="o">=</span> <span class="n">today_states</span><span class="p">[</span><span class="n">today_states</span><span class="o">.</span><span class="n">Confirmed</span> <span class="o">==</span> <span class="n">today_states</span><span class="o">.</span><span class="n">Confirmed</span><span class="o">.</span><span class="n">max</span><span class="p">()]</span>
-<span class="n">max_deaths</span> <span class="o">=</span> <span class="n">today_states</span><span class="p">[</span><span class="n">today_states</span><span class="o">.</span><span class="n">Deaths</span> <span class="o">==</span> <span class="n">today_states</span><span class="o">.</span><span class="n">Deaths</span><span class="o">.</span><span class="n">max</span><span class="p">()]</span>
-<span class="n">max_cured</span> <span class="o">=</span> <span class="n">today_states</span><span class="p">[</span><span class="n">today_states</span><span class="o">.</span><span class="n">Cured</span> <span class="o">==</span> <span class="n">today_states</span><span class="o">.</span><span class="n">Cured</span><span class="o">.</span><span class="n">max</span><span class="p">()]</span>
-
-<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">html_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;States summary :&#39;</span><span class="p">)))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">html_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;DodgerBlue&#39;</span><span class="p">,</span><span class="s1">&#39;Maximum confirmed cases - &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_confrim</span><span class="o">.</span><span class="n">Confirmed</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span><span class="o">+</span><span class="n">max_confrim</span><span class="p">[</span><span class="s1">&#39;State/UnionTerritory&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">html_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;MediumSeaGreen&#39;</span><span class="p">,</span><span class="s1">&#39;Maximum cured - &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_cured</span><span class="o">.</span><span class="n">Cured</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span><span class="o">+</span><span class="n">max_cured</span><span class="p">[</span><span class="s1">&#39;State/UnionTerritory&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">html_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span><span class="s1">&#39;Maximum deaths - &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_deaths</span><span class="o">.</span><span class="n">Deaths</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span><span class="o">+</span><span class="n">max_deaths</span><span class="p">[</span><span class="s1">&#39;State/UnionTerritory&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -13268,8 +13250,7 @@ require(['plotly'], function(Plotly) {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
+    <div class="prompt"> </div>
 
 
 <div class="output_markdown rendered_html output_subarea ">
@@ -13281,8 +13262,7 @@ require(['plotly'], function(Plotly) {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
+    <div class="prompt"> </div>
 
 
 <div class="output_markdown rendered_html output_subarea ">
@@ -13294,8 +13274,7 @@ require(['plotly'], function(Plotly) {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
+    <div class="prompt"> </div>
 
 
 <div class="output_markdown rendered_html output_subarea ">
@@ -13307,8 +13286,7 @@ require(['plotly'], function(Plotly) {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
+    <div class="prompt"> </div>
 
 
 <div class="output_markdown rendered_html output_subarea ">
@@ -13946,55 +13924,6 @@ if (outputEl) {{
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dummy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-
-<span class="n">dummy</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">covid_19_india_df</span><span class="p">[</span><span class="s1">&#39;State/UnionTerritory&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-
-<span class="c1">#colors = sns.dark_palette(&quot;purple&quot;, 33).as_hex()</span>
-<span class="c1">#colors = sns.diverging_palette(250, 15, s=75, l=40, n=33, center=&quot;dark&quot;).as_hex()</span>
-<span class="c1">#colors = sns.color_palette(&quot;Blues_d&quot;, 33).as_hex()</span>
-<span class="n">colors</span> <span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="mi">33</span><span class="p">)</span><span class="o">.</span><span class="n">as_hex</span><span class="p">()</span>
- 
-<span class="k">def</span> <span class="nf">animate_bar_chart</span><span class="p">():</span>
-    <span class="n">frames</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">grouped</span> <span class="o">=</span> <span class="n">covid_19_india_df</span><span class="p">[</span><span class="n">covid_19_india_df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="s1">&#39;2020/03&#39;</span><span class="p">][[</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="s1">&#39;State/UnionTerritory&#39;</span><span class="p">,</span> <span class="s1">&#39;Confirmed&#39;</span><span class="p">,</span> <span class="s1">&#39;Deaths&#39;</span><span class="p">,</span> <span class="s1">&#39;Cured&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Date&#39;</span><span class="p">])</span>    
-    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="n">grouped</span><span class="p">):</span>
-        <span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">group</span><span class="p">,</span> <span class="n">dummy</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;State/UnionTerritory&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;State&#39;</span><span class="p">)</span>        
-        <span class="n">merged</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">merged</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">frames</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">merged</span><span class="p">[</span><span class="s1">&#39;Confirmed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">colors</span><span class="p">)],</span> 
-                              <span class="n">layout</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Confirmed cases - &#39;</span><span class="o">+</span><span class="n">group</span><span class="o">.</span><span class="n">Date</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">))))</span>
-    
-    <span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">merged</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()))],</span>
-        <span class="n">frames</span><span class="o">=</span><span class="n">frames</span><span class="p">,</span> 
-        <span class="n">layout</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
-            <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
-            <span class="n">height</span><span class="o">=</span><span class="mi">750</span><span class="p">,</span>
-            <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">),</span>
-            <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3500</span><span class="p">],</span> <span class="n">autorange</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>            
-            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Confirmed cases&quot;</span><span class="p">,</span>
-            <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">&quot;State&quot;</span><span class="p">,</span>
-            <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;Count&quot;</span><span class="p">,</span>
-            <span class="n">updatemenus</span><span class="o">=</span><span class="p">[</span><span class="nb">dict</span><span class="p">(</span>
-                <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;buttons&quot;</span><span class="p">,</span>
-                <span class="n">buttons</span><span class="o">=</span><span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Play&quot;</span><span class="p">,</span>
-                              <span class="n">method</span><span class="o">=</span><span class="s2">&quot;animate&quot;</span><span class="p">,</span>
-                              <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="kc">None</span><span class="p">])])]))</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-                                       
-                                       
-
-<span class="n">animate_bar_chart</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -14002,8 +13931,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
+    <div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -14061,16 +13989,6 @@ if (outputEl) {{
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 </div>
     </div>
